@@ -81,6 +81,12 @@ header {
     height: 100vh;
     background-color: var(--white);
     padding: 27px 21px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+#main-nav.menu.active {
+    transform: translateX(0);
 }
 
 #close-menu {
@@ -113,7 +119,6 @@ header {
 
 /* Overlay */
 #overlay {
-    display: none;
     position: fixed;
     z-index: 0;
     inset: 0;
