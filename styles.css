@@ -34,6 +34,11 @@ body {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Header */
 header {
     height: 28px;
@@ -115,6 +120,13 @@ main {
     text-transform: uppercase;
     padding: var(--spacing-200) var(--spacing-400);
     align-self: flex-start;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#main-article button:hover {
+    background-color: var(--navy-950);
+    color: white;
 }
 
 /* New Section */
@@ -150,6 +162,11 @@ main {
     font-size: 20px;
     line-height: 24px;
     font-weight: 800;
+    transition: color 0.2s ease;
+}
+
+#new-section .title:hover {
+    color: var(--gold-400);
 }
 
 #new-section .description {
@@ -194,6 +211,11 @@ main {
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
+    transition: color 0.2s ease;
+}
+
+#popular-section .title:hover {
+    color: var(--red-500);
 }
 
 /* Tablet Responsive Styles */
@@ -256,8 +278,12 @@ main {
     }
 
     .nav-list a {
-        text-decoration: none;
         color: var(--navy-600);
+        transition: color 0.2s ease;
+    }
+
+    .nav-list a:hover {
+        color: var(--red-500);
     }
 
     /* Main Section */
