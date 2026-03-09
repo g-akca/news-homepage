@@ -97,3 +97,43 @@ main {
     padding: var(--spacing-200) var(--spacing-400);
     align-self: flex-start;
 }
+
+/* New Section */
+#new-section {
+    background-color: var(--navy-950);
+    padding: 23px 21px;
+}
+
+#new-section h2 {
+    color: var(--gold-400);
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+#new-section article {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+}
+
+#new-section article:not(:last-of-type) {
+    padding: var(--spacing-400) 0;
+    border-bottom: var(--navy-600) 1px solid;
+}
+
+#new-section article:last-of-type {
+    padding-top: var(--spacing-400);
+}
+
+#new-section .title {
+    color: var(--white);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 800;
+}
+
+#new-section .description {
+    color: var(--grey-300);
+    line-height: 26px;
+}
