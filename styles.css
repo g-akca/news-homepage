@@ -65,8 +65,18 @@ header {
     height: 17px;
 }
 
-nav {
+#main-nav {
     display: none;
+}
+
+#main-nav.menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--white);
 }
 
 /* Main Section */
@@ -262,7 +272,7 @@ main {
     }
 
     /* Navigation Bar */
-    nav {
+    #main-nav {
         display: block;
     }
 

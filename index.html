@@ -8,19 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>News Homepage</title>
   </head>
   <body>
     <header>
       <img id="logo" src="images/logo.svg" alt="W logo">
-
-      <button id="open-menu">
-        <img src="images/icon-menu.svg" alt="Open menu">
+      <button id="open-menu" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+        <img src="images/icon-menu.svg">
       </button>
 
-      <nav>
-        <button id="close-menu">
-          <img src="images/icon-menu-close.svg" alt="Close menu">
+      <nav id="main-nav">
+        <button id="close-menu" aria-label="Close menu">
+          <img src="images/icon-menu-close.svg">
         </button>
 
         <ul class="nav-list">
