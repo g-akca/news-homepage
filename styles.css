@@ -70,13 +70,44 @@ header {
 }
 
 #main-nav.menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1100);
     position: fixed;
     right: 0;
     top: 0;
-    width: 250px;
+    width: min(256px, 75%);
     height: 100vh;
     background-color: var(--white);
+    padding: 27px 21px;
+}
+
+#close-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    padding: 0;
+    align-self: flex-end;
+}
+
+#main-nav.menu .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.nav-list a {
+    color: var(--navy-950);
+    transition: color 0.2s ease;
+}
+
+.nav-list a:hover {
+    color: var(--red-500);
 }
 
 /* Main Section */
@@ -239,6 +270,16 @@ main {
         max-width: 608px;
     }
 
+    /* Navigation Menu */
+    #main-nav.menu {
+        width: min(312px, 50%);
+        padding: 27px 36px;
+    }
+
+    #close-menu {
+        margin-right: 15%;
+    }
+
     /* New Section */
     #new-section {
         padding: 35px 42px;
@@ -289,11 +330,6 @@ main {
 
     .nav-list a {
         color: var(--navy-600);
-        transition: color 0.2s ease;
-    }
-
-    .nav-list a:hover {
-        color: var(--red-500);
     }
 
     /* Main Section */
