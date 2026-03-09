@@ -27,6 +27,7 @@
 body {
     font-family: "Inter", sans-serif;
     font-size: 15px;
+    line-height: 26px;
     padding: 28px var(--spacing-200) var(--spacing-500);
     display: flex;
     flex-direction: column;
@@ -44,7 +45,7 @@ header {
 }
 
 #logo {
-    height: 28px;
+    height: 100%;
 }
 
 #open-menu {
@@ -57,6 +58,10 @@ header {
 
 #open-menu img {
     height: 17px;
+}
+
+nav {
+    display: none;
 }
 
 /* Main Section */
@@ -86,9 +91,8 @@ main {
     color: var(--navy-950);
 }
 
-#main-article .description {
+#main-article .description, #popular-section .description {
     color: var(--navy-600);
-    line-height: 26px;
 }
 
 #main-article button {
@@ -142,7 +146,6 @@ main {
 
 #new-section .description {
     color: var(--grey-300);
-    line-height: 26px;
 }
 
 /* Popular Section */
@@ -185,13 +188,9 @@ main {
     font-weight: 800;
 }
 
-#popular-section .description {
-    color: var(--navy-600);
-    line-height: 26px;
-}
-
 /* Tablet Responsive Styles */
 @media screen and (min-width: 376px) {
+    /* General */
     body {
         padding: 28px var(--spacing-400) var(--spacing-500);
     }
@@ -200,6 +199,7 @@ main {
         max-width: 608px;
     }
 
+    /* New Section */
     #new-section {
         padding: 35px 42px;
     }
@@ -207,5 +207,48 @@ main {
     #new-section h2 {
         font-size: 40px;
         line-height: 40px;
+    }
+}
+
+/* Desktop Responsive Styles */
+@media screen and (min-width: 769px) {
+    /* General */
+    body {
+        padding: var(--spacing-1100);
+    }
+
+    main, header {
+        max-width: 1112px;
+    }
+
+    /* Header */
+    header {
+        height: 40px;
+        margin-bottom: var(--spacing-800);
+    }
+
+    #open-menu {
+        display: none;
+    }
+
+    /* Navigation Bar */
+    nav {
+        display: block;
+    }
+
+    #close-menu {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: var(--spacing-500);
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: var(--navy-600);
     }
 }
