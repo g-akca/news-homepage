@@ -4,7 +4,7 @@ const navBar = document.getElementById("main-nav");
 const overlay = document.getElementById("overlay");
 
 function handleResize() {
-    if (window.innerWidth >= 900) {
+    if (window.innerWidth >= 1440) {
         navBar.classList.remove("menu");
         navBar.classList.remove("active");
         openMenuBtn.setAttribute("aria-expanded", "false");

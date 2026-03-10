@@ -283,14 +283,10 @@ main {
 }
 
 /* Tablet Responsive Styles */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 768px) {
     /* General */
     body {
-        padding: 28px var(--spacing-400) var(--spacing-500);
-    }
-
-    main, header {
-        max-width: 608px;
+        padding: 28px 80px var(--spacing-500);
     }
 
     /* Navigation Menu */
@@ -315,14 +311,10 @@ main {
 }
 
 /* Desktop Responsive Styles */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1440px) {
     /* General */
     body {
-        padding: var(--spacing-1100);
-    }
-
-    main, header {
-        max-width: 1112px;
+        padding: var(--spacing-1100) 164px;
     }
 
     /* Header */
